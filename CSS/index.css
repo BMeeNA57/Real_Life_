@@ -1,3 +1,11 @@
 body {
     background-color: black;
+    font-family: Arial;
+    margin: 0 auto; /* Center website */
+    max-width: 800px; /* Max width */
+    padding: 20px;
   }
+
+/*Score Card CSS*/
+
+/*End Score Card CSS*/
