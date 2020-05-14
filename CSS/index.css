@@ -1,5 +1,8 @@
 body {
     background-color: black;
+    background-image: url('../Images/LookOutMountain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial;
     margin: 0 auto; /* Center website */
     max-width: 800px; /* Max width */
@@ -7,5 +10,14 @@ body {
   }
 
 /*Score Card CSS*/
-
+.carousel-item{
+  width: 100%; /*width you want*/
+  height: 500px; /*height you want*/
+  overflow: hidden;
+}
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /*End Score Card CSS*/
