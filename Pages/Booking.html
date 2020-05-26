@@ -26,9 +26,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
             <a class="nav-link" href="../Pages/Vlog.html">Vlog</a>
         </li>
@@ -41,26 +38,110 @@
         <li class="nav-item">
             <a class="nav-link" href="./About.html">About</a>
         </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
         </ul>
     </div>
 </nav>
 <!--End Nav Bar-->
 
+
+<div class="container" style="background-color: black; padding: 20px; text-align: center;">
 <!--Booking Form-->
-<h1 style="color:red;">Sign Up here for a booking.<br> I'll reach out to you within 24 hours!</h1>
-<br>
-<form>
-    <div class="form-group">
-        <label for="inputEmail" style="color: blue;">Email</label>
-        <input type="email" style="color: white;" class="form-control" id="inputEmail" placeholder="Email">
-    </div>
-    <div class="form-group">
-        <label for="inputPassword" style="color: blue;">Video or Photo</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Video or Photo">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<!--Section: Contact v.2-->
+    <section class="mb-4">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4" style="color:red">Contact us</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5" style="color:red">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" style="color:red" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" style="color:red" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" style="color:red" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message" style="color:red">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center" style="color:red">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <p>Denver, CO <br> 80202</p>
+                    </li>
+
+                    <li>
+                        <p>###########</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+        </div>
+
+    </section>
+<!--Section: Contact v.2-->
 <!--End Booking Form-->
+</div>
 
 <!--Reviews Section-->
 <div class="container">
@@ -69,6 +150,33 @@
 <!-- rating.js file -->
     <script src="js/addons/rating.js"></script>
 <!--End Reviews Section-->
+
+<!--Footer-->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container" style="background-color: black; padding-inline-start: inherit;">
+  
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <a href="../Pages/Booking.html" class="btn btn-outline-white btn-rounded" style="color: white;">Sign up!</a>
+        </li>
+      </ul>
+      <!-- Call to action -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="background-color: black; padding-inline-start: inherit; color: white;">© 2020 Copyright:
+      <a href="#"> Real Life Reality</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  
+  <!--End Footer-->
 
     <!-- Optional JavaScript -->
     <script src="../JavaScript/index.js"></script>
