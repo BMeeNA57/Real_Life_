@@ -44,12 +44,14 @@ document.getElementById("timeIndex").innerHTML = d;
 /*End Index Page - Time*/
 
 //*Lighbox Photo Page*//
-function startLightBox(){
-  var lbBg = document.getElementById("lightBoxBg");
-  var lb = document.getElementById("lightBox");
+const lightbox = document.createElement('div')
+lightbox.id='lightbox'
+document.body.appendChild(lightbox)
 
-  lbBg.style.display = "block";
-  lb.style.display = "block";
-}
-
+const images = document.querySelectorAll('img')
+images.forEach(image => {
+  image.addEventListener('click', e => {
+    lightbox.classList.add('active')
+  })
+}) 
 //*End Lightbox Photo Page*//

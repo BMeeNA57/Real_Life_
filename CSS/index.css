@@ -2,6 +2,7 @@ body {
     background-color: black;
     background-image: url('../Images/Steamboat/steamboat3.jpg');
     background-repeat: no-repeat;
+    justify-content: center;
     background-size: cover 100%;
     font-family: Arial;
     margin: 0 auto; /* Center website */
@@ -30,4 +31,17 @@ body {
 /*End Score Card CSS - Index*/
 
 /*Photos Page*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  height: 100vh;
+}
+.grid img {
+  width: 300px;
+  height: 300px;
+}
+
 /*End Photos Page*/
