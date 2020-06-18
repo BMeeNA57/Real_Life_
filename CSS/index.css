@@ -8,7 +8,6 @@ body {
     margin: 0 auto; /* Center website */
     max-width: 800px; /* Max width */
     padding: 20px;
-    overflow: hidden;
   }
 
 /*Jumbotron*/
@@ -55,7 +54,6 @@ body {
   width: 250px;
   height: 250px;
 }
-/* Style the Image Used to Trigger the Modal */
 #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -79,7 +77,7 @@ body {
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (Image) */
+/* Modal Content (image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -87,7 +85,7 @@ body {
   max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/* Caption of Modal Image */
 #caption {
   margin: auto;
   display: block;
@@ -99,14 +97,21 @@ body {
   height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
 @keyframes zoom {
-  from {transform:scale(0)}
+  from {transform:scale(0)} 
   to {transform:scale(1)}
 }
 
