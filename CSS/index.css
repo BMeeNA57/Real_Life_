@@ -2,7 +2,7 @@ body {
     background-color: black;
     background-image: url('../Images/Steamboat/steamboat3.jpg');
     background-repeat: no-repeat;
-    justify-content: center;
+    justify-content: center 100%;
     background-size: cover 100%;
     font-family: Arial;
     margin: 0 auto; /* Center website */
@@ -15,6 +15,16 @@ body {
   color:white;
  background-color: black;
   }
+  #video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    width: 100%;
+}
 /*End Jumbotron*/
 
 /*Score Card CSS - Index*/
@@ -45,3 +55,28 @@ body {
 }
 
 /*End Photos Page*/
+
+/*Vlog Page*/
+
+#headVideo {
+  padding: 20px;
+  align-content: center;
+  justify-content: center;
+
+}
+/*End Vlog Page*/
+
+
+/*About Page*/
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+/* End About Page*/
